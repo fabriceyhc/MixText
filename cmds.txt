@@ -1,0 +1,5 @@
+python ./code/train.py --task imdb --gpu 0,1 --n-labeled 10 --batch-size 8 --epochs 50 --val-iteration 20 
+--lambda-u 0 --T 0.5 --alpha 16 --mix-layers-set 7 9 12 --separate-mix True 
+
+
+python ./code/train_fhc.py --gpu 0,1 --n-labeled 10 --task yahoo_answers_topics --batch-size 8 --batch-size-u 1 --epochs 50 --val-iteration 20 --lambda-u 0 --T 0.5 --alpha 16 --mix-layers-set 7 9 12 --separate-mix True 
